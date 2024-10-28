@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+.list-container {
+    display: flex;
+    gap: 35%; 
+}
+
+.ordered-list,
+.unordered-list {
+    list-style-position: inside; 
+    padding: 0;
+    margin: 0;
+}
+
+.ordered-list li,
+.unordered-list li {
+    margin-bottom: 10px; 
+}
+header {
+    background: #333;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 5;
+    position: relative;
+    background-color: #333;
+    color: white    
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+.navbar ul li a:hover {
+    color:#e13333;
+    background-color: #000000;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.banner {
+    background-image: url('images/texasbackground.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 300px; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    position: relative; 
+}
+.contact-banner {
+    background-image: url(images/contactbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    overflow: hidden;
+}
+.contact-page {
+    padding: 0;
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+    width: 80%;
+    background: rgba(255, 255, 255, 0.4); 
+    padding: 20px; 
+    border-radius: 10px; 
+    z-index: 3; 
+    position: relative;
+}
+
+
+
+.contact-form {
+    width: 45%; 
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px; 
+    resize: vertical; 
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    width: 35%;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+}
+section {
+    flex: 3; 
+    margin-right: 100px; 
+}
+
+aside {
+    float: right;
+    width: 30%;
+    margin-left: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+
+.images-placeholder {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.image-placeholder {
+    width: 30%; 
+    height: 200px; 
+    background-color: #ccc; 
+    text-align: center;
+    line-height: 200px; 
+}
+
+
+.contact-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page .contact-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#footer {
+    background-color: #333;
+    color: #e13333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+#footer a {
+    color: #0b02fa;
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+
